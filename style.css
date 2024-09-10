@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+/* Generated pallete from: https://coolors.co/f7f7ff-4d8b31-dde8b9-181617-ff8427 */
+:root {
+  --YKCL-01: rgb(247, 247, 255); /* White #f7f7ff */
+  --YKCL-02: rgb(77, 139, 49); /*Dark Green #4d8b31 */
+  --YKCL-03: rgb(221, 232, 185); /*Light Green #dde8b9 */
+  --YKCL-04: rgb(24, 22, 23); /* Black 1 #181617 */
+  --YKCL-05: rgb(45, 43, 44); /*Black 2 #131117 */
+  --YKCL-06: rgb(255, 132, 39); /* Digital Fox orange #ff8427 */
+  
+  --YKFT-PRIM: "Cabin",Sans-Serif;
+  --YKFT-SEC: "Montserrat",Sans-Serif;
+  
+  
+}
+/* Elements */
+body {
+  font-family: var(--YKFT-PRIM);
+}
+img,
+svg {
+  max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--YKFT-SEC);
+  font-weight: 700;
+}
+
+/* Classes */
+.body-yk {
+  background-color: var(--YKCL-06);
+  font-family: var(--YKFT-PRIM);
+  background: url('img/BG_HUB.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+.yk-nav-top {
+  background: linear-gradient(rgba(0,0,0,0.8),transparent);
+  color: var(--YKCL-01);
+}
+.yk-nav-bottom {
+  background: linear-gradient(transparent,rgba(0,0,0,0.8));
+  color: var(--YKCL-01);
+}
+/* Buttons */
+.btn-yk {
+  min-height: 32vh;
+  width: 100%;
+  border-radius: 0rem;
+  border: 1px solid var(--YKCL-01);
+  color: var(--YKCL-01);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: 0.25s ease-in-out;
+}
+.btn-yk:hover:active {
+  border: 1px solid var(--YKCL-02);
+  color: var(--YKCL-02);
+}
+.btn-ykbg-1 {
+  background: linear-gradient(transparent,transparent),url('img/BG_FICO.png'),var(--YKCL-02);
+  background-size: 100%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  transition: 0.25s ease-in-out;
+}
+.btn-ykbg-2 {
+  background: linear-gradient(transparent,rgba(0,0,0,0.75)),url('img/BG_PLU.jpg');
+  background-size: cover;
+  background-position: 25%;
+  background-repeat: no-repeat;
+  transition: 0.25s ease-in-out;
+}
+.btn-ykbg-3 {
+  background: linear-gradient(transparent,rgba(0,0,0,0.75)),url('img/BG_HUB.jpg');
+  background-size: cover;
+  background-position: 25%;
+  background-repeat: no-repeat;
+  transition: 0.25s ease-in-out;
+}
+.btn-ykbg-4 {
+  background: linear-gradient(transparent,transparent),url('img/BG_FICN.png'),var(--YKCL-02);
+  background-size: 100%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  transition: 0.25s ease-in-out;
+}
+.btn-ykbg-1:hover:active {
+  background: linear-gradient(transparent,transparent),url('img/BG_FICO.png'),var(--YKCL-04);
+  background-size: 100%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+.btn-ykbg-2:hover:active {
+  background: linear-gradient(transparent,rgba(0,0,0,1)),url('img/BG_PLU.jpg');
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.btn-ykbg-3:hover:active {
+  background: linear-gradient(transparent,rgba(0,0,0,1)),url('img/BG_HUB.jpg');
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.btn-ykbg-4:hover:active {
+  background: linear-gradient(transparent,transparent),url('img/BG_FICN.png'),var(--YKCL-04);
+  background-size: 100%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+.btn-yktxt {
+  text-align: start;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-size: 0.8em;
+}
+/*misc*/
+.logo {
+  height: 1em;
+  margin-right: 0.5rem;
+}
+.brand {
+  font-size: 1rem;
+  font-weight: 700;
+}
+@media (min-width:990px) {
+  .yk-modal {
+    border: 1px solid rgb(200,200,220);
+  }
+  .btn-yk {
+    min-height: 80vh;
+  }
+  .btn-yktxt {
+    font-size: 1.5em;
+  }
+}
