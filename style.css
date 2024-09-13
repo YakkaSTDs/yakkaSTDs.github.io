@@ -38,7 +38,7 @@ hr {
   color: var(--YKCL-01);
   padding-top: 3.5em;
   padding-bottom: 3.5em;
-  background-image: url('img/BG_WEB.png');
+  background-image: url('img/BG_WEB_MOB.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -161,5 +161,8 @@ hr {
 @media (min-width:990px) {
   .btn-bgyk {
     min-height: 80vh;
+  }
+  .yk-body {
+    background-image: url('img/BG_WEB_DESK.jpg');
   }
 }
