@@ -1,0 +1,186 @@
+/* Import custom FONTS */
+@font-face {
+  font-family: "Inter";
+  src: url("FONTS/Inter-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("FONTS/Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("FONTS/Inter-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("FONTS/Inter-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("FONTS/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("FONTS/RobotoMono-Regular.ttf") format("truetype");
+}
+
+:root {
+  /* Text Colors */
+  --YKCL-TXTP: #e0e0e0;
+  --YKCL-TXTP-RGB: 224, 224, 224;
+  --YKCL-TXTS: #b0b0b0;
+  --YKCL-TXTS-RGB: 176, 176, 176;
+
+  /* Background */
+  --YKCL-BGP: #121212;
+  --YKCL-BGP-RGB: 18, 18, 18;
+  --YKCL-BGS: #1e1e1e;
+  --YKCL-BGS-RGB: 30, 30, 30;
+
+  /* Branding Colors */
+  --YKCL-CLAP: #4d8b31; /* Primary branding color */
+  --YKCL-CLAP-RGB: 77, 139, 49;
+  --YKCL-CLAS: #ff8427; /* Secondary branding color */
+  --YKCL-CLAS-RGB: 255, 132, 39;
+
+  /* FONTS */
+  --FTFCP: "Inter", sans-serif; /* Primary font */
+  --FTFCS: "Montserrat", sans-serif; /* Secondary font (for headings) */
+  --FTFCM: "Roboto Mono", monospace; /* Monospace font */
+
+  /* Numbers */
+  --YKNM-BD: 1px; /* Border stroke */
+  --YKNM-CN: 1rem; /* Corner rounding */
+}
+
+/* Prefer dark mode */
+body {
+  background-color: var(--YKCL-BGP);
+  color: var(--YKCL-TXTP); /* Light text */
+  font-family: var(--FTFCP); /* Primary font */
+  font-weight: normal;
+}
+
+/* Typography */
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--FTFCS); /* Heading font */
+  font-weight: bold;
+}
+code,pre {
+  font-family: var(--FTFCM); /* Code font */
+}
+
+/* Images and SVGs */
+svg,img {
+  max-width: 100%; /* Ensure responsiveness */
+  height: auto;
+}
+
+/* Additional Styling */
+a {
+  color: var(--YKCL-CLAP); /* Link color */
+}
+a:hover {
+  color: #367026; /* Slightly darker shade on hover */
+}
+
+.bg-ykbody {
+  background-image: 
+    url('IMG/yklgsvg.svg'),
+    url('IMG/P.svg'),
+    linear-gradient(var(--YKCL-BGP), var(--YKCL-BGS));
+  background-repeat: no-repeat,repeat,repeat;
+  background-position: center,top left,top left;
+  background-size: 25vw auto,auto,cover;
+  color: var(--YKCL-TXTP);
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+/* Bootstrap 5 Styled Utilities */
+.btn {
+  height: 100%;
+}
+/* Buttons */
+.btn-ykprimary {
+  background-color: var(--YKCL-CLAP);
+  border-color: var(--YKCL-CLAP);
+  color: var(--YKCL-TXTP);
+}
+.btn-ykprimary:hover {
+  background-color: rgba(var(--YKCL-CLAP-RGB), 0.8);
+  border-color: rgba(var(--YKCL-CLAP-RGB), 0.8);
+}
+
+.btn-yksecondary {
+  background-color: var(--YKCL-CLAS);
+  border-color: var(--YKCL-CLAS);
+  color: var(--YKCL-TXTP);
+}
+.btn-yksecondary:hover {
+  background-color: rgba(var(--YKCL-CLAS-RGB), 0.8);
+  border-color: rgba(var(--YKCL-CLAS-RGB), 0.8);
+}
+
+/* Background Colors */
+.bg-ykprimary {
+  background-color: var(--YKCL-CLAP) !important;
+  color: var(--YKCL-TXTP) !important;
+}
+.bg-yksecondary {
+  background-color: var(--YKCL-CLAS) !important;
+  color: var(--YKCL-TXTP) !important;
+}
+
+/* Text Colors */
+.text-ykprimary {
+  color: var(--YKCL-CLAP) !important;
+}
+.text-yksecondary {
+  color: var(--YKCL-CLAS) !important;
+}
+
+/* Alerts */
+.alert-ykprimary {
+  background-color: rgba(var(--YKCL-CLAP-RGB), 0.1);
+  border-color: var(--YKCL-CLAP);
+  color: var(--YKCL-CLAP);
+}
+.alert-yksecondary {
+  background-color: rgba(var(--YKCL-CLAS-RGB), 0.1);
+  border-color: var(--YKCL-CLAS);
+  color: var(--YKCL-CLAS);
+}
+
+/* Borders */
+.border-ykprimary {
+  border: var(--YKNM-BD) solid var(--YKCL-CLAP) !important;
+}
+.border-yksecondary {
+  border: var(--YKNM-BD) solid var(--YKCL-CLAS) !important;
+}
+
+/* Links */
+.link-ykprimary {
+  color: var(--YKCL-CLAP);
+}
+.link-ykprimary:hover {
+  color: rgba(var(--YKCL-CLAP-RGB), 0.8);
+}
+
+.link-yksecondary {
+  color: var(--YKCL-CLAS);
+}
+.link-yksecondary:hover {
+  color: rgba(var(--YKCL-CLAS-RGB), 0.8);
+}
